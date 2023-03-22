@@ -1,0 +1,62 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.flexcontainer {
+    width: 400px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-items: center;
+    display: flex;
+}
+
+.submitbutton {
+    border: none;
+    background-color: #d740be;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    padding: 12px 30px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    transition: ease 300ms;
+    float: right;
+}
+
+.submitbutton:hover {
+    background-color: #f658ee;
+}
+
+input.user {
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 10px;
+    background-color: #222;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    height: 8px;
+    width: calc(100% - 20px);
+    color: #999;
+
+}
+
+.loginhead {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    margin: 6px 0;
+    font-size: 30px;
+}

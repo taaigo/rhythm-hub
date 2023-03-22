@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+ul {
+    background-color: #494949;
+    padding: 14px;
+}
+
+a.nav {
+    display: block;
+    padding: 14px;
+    margin-left: 22px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    transition: ease 400ms;
+    cursor: pointer;
+}
+
+a.nav:hover {
+    color: #ff7ff3;
+}
