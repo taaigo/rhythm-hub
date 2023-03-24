@@ -1,5 +1,7 @@
 <?php
+session_start();
 include "../php/login.php";
+include "../php/session.php";
 $output = login();
 ?>
 <!DOCTYPE html>
@@ -18,10 +20,11 @@ $output = login();
         <ul>
             <li><a class="nav" href="index.php">Home</a></li>
             <li><a class="nav" href="songs.php">Songs</a></li>
-            <li style="float: right"><a class="nav">Login</a></li>
+            <?php printLoginButton() ?>
         </ul>
     </nav>
     <div class="container">
+        <div class="loginWarning"><?php echo $output ?></div>
         <div class="flexcontainer">
             <form method="post" action="">
                 <div class="containerheadtext">Sign in</div>
@@ -31,6 +34,5 @@ $output = login();
             </form>
         </div>
     </div>
-<?php echo $output ?>
 </body>
 </html>

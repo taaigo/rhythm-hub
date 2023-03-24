@@ -27,6 +27,25 @@ a.nav {
     cursor: pointer;
 }
 
+input.nav {
+    display: block;
+    padding: 14px;
+    margin-left: 22px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    transition: ease 400ms;
+    cursor: pointer;
+}
+
 a.nav:hover {
+    color: #ff7ff3;
+}
+
+input.nav:hover {
     color: #ff7ff3;
 }

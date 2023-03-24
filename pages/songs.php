@@ -1,6 +1,8 @@
 <?php
+session_start();
 error_reporting(E_ALL);
 include "../php/getSongs.php";
+include "../php/session.php";
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -18,7 +20,7 @@ include "../php/getSongs.php";
     <ul>
         <li><a class="nav" href="index.php">Home</a></li>
         <li><a class="nav">Songs</a></li>
-        <li style="float: right"><a class="nav" href="login.php">Login</a></li>
+        <?php printLoginButton() ?>
     </ul>
 </nav>
 <div class="containerheadtext" style="

@@ -54,3 +54,11 @@ input.user {
     color: #999;
 
 }
+
+.loginWarning {
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
+    color: #e01111;
+    font-family: 'Varela Round', sans-serif;
+}

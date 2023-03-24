@@ -1,3 +1,7 @@
+<?php
+session_start();
+include '../php/session.php';
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -12,7 +16,7 @@
         <ul>
             <li><a class="nav">Home</a></li>
             <li><a class="nav" href="songs.php">Songs</a></li>
-            <li style="float: right"><a class="nav" href="login.php">Login</a></li>
+            <?php printLoginButton() ?>
         </ul>
     </nav>
     <h5>Welcome to miku.org</h5>

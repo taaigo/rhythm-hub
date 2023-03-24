@@ -25,11 +25,13 @@ function login()
         {
             if ( $result -> num_rows == 1)
             {
-                return "User exists as $user";
+                $_SESSION["username"] = $user;
+                $_SESSION["session-id"] = session_id();
+                return;
             }
             else
             {
-                return "User doesn't exist";
+                return "Invalid combination or user doesn't exist.";
             }
 
             $result -> free_result();
@@ -39,6 +41,6 @@ function login()
     }
     else
     {
-        return "PLEASE INSERT!!!1!!!11!!11!";
+        return;
     }
 }
