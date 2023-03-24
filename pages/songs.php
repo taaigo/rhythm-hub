@@ -25,7 +25,7 @@ include "../php/session.php";
 </nav>
 <div class="containerheadtext" style="
         font-size: 40px;
-        margin-top: 12px;
+        margin-top: 48px;
         margin-left: 9%;
         text-align: left;
     ">Beatmap listing</div>

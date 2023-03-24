@@ -7,7 +7,7 @@ session_destroy();
     <head>
         <title>redirecting...</title>
      <meta charset="UTF-8" />
-     <meta http-equiv="refresh" content="1; URL=./login.php" />
+     <meta http-equiv="refresh" content="1; URL=../pages/profilelogin.php" />
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/navbar.css">
    </head>

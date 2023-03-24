@@ -1,9 +1,3 @@
-<?php
-session_start();
-include "../php/login.php";
-include "../php/session.php";
-$output = login();
-?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
