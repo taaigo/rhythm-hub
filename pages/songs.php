@@ -21,6 +21,12 @@ include "../php/getSongs.php";
         <li style="float: right"><a class="nav" href="login.php">Login</a></li>
     </ul>
 </nav>
+<div class="containerheadtext" style="
+        font-size: 40px;
+        margin-top: 12px;
+        margin-left: 9%;
+        text-align: left;
+    ">Beatmap listing</div>
 <div class="container">
     <div class="flexcontainer">
         <?php echo printSongs() ?>

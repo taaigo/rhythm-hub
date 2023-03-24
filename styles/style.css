@@ -24,6 +24,13 @@ body {
     padding: 14px;
 }
 
+.containerheadtext {
+    font-family: 'Varela Round', sans-serif;
+    color: #da8fce;
+    margin: 6px 0;
+    font-size: 30px;
+}
+
 li {
     margin-right: 5px;
 }

@@ -24,7 +24,7 @@ $output = login();
     <div class="container">
         <div class="flexcontainer">
             <form method="post" action="">
-                <div class="loginhead">Sign in</div>
+                <div class="containerheadtext">Sign in</div>
                 <input class="user" placeholder="Username" type="text" name="username">
                 <input class="user" placeholder="Password" type="password" id="passwordInput" name="password">
                 <input class="submitbutton" type="submit" value="Login">

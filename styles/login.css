@@ -35,6 +35,7 @@ form {
 
 .submitbutton:hover {
     background-color: #f658ee;
+    cursor: pointer;
 }
 
 input.user {
@@ -52,11 +53,4 @@ input.user {
     width: calc(100% - 20px);
     color: #999;
 
-}
-
-.loginhead {
-    font-family: 'Varela Round', sans-serif;
-    color: white;
-    margin: 6px 0;
-    font-size: 30px;
 }
