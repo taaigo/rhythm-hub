@@ -10,6 +10,7 @@ include '../php/session.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body>
     <nav>
@@ -19,10 +20,11 @@ include '../php/session.php';
             <?php printLoginButton() ?>
         </ul>
     </nav>
-    <h5>Welcome to miku.org</h5>
-    <h2>we all like miku</h2>
-    <p>This site is made by miku enjoyers for miku enjoyers.<br>
-    Here you can share thoughts on miku songs games and all others thing related to miku.</p>
-    <img src="../media/miku_original.jpg">
+    <div class="container">
+        <h5>Rhythm Hub</h5>
+        <h2>We all like Miku! (and Camellia)</h2>
+        <p>Listing of songs and beatmaps on multiple games.</p>
+        <img src="../media/miku_original.jpg">
+    </div>
 </body>
 </html>

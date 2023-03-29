@@ -3,7 +3,8 @@ function printLoginButton()
 {
     if ( empty($_SESSION["username"]) )
     {
-        echo '<li style="float: right"><a class="nav" href="profilelogin.php">Login</a></li>';
+        echo '<li style="float: right"><a class="nav" href="./register.php">Signup</a></li>
+              <li style="float: right"><a class="nav" href="profilelogin.php">Login</a></li>';
     }
     else
     {

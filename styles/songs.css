@@ -10,6 +10,7 @@ img {
 .flexcontainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 1036px;
     height: 100%;
     flex-direction: row;

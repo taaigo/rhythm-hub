@@ -62,3 +62,11 @@ input.user {
     color: #e01111;
     font-family: 'Varela Round', sans-serif;
 }
+
+.success {
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
+    color: #11e01b;
+    font-family: 'Varela Round', sans-serif;
+}

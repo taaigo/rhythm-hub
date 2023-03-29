@@ -11,7 +11,7 @@ function login()
         // 3. check results
         // 4. break connection
 
-        $mysqli = new mysqli("localhost", "root", "", "database");
+        $mysqli = new mysqli("localhost", "tygo", "zEFwxS1VyEibYSw3", "database");
 
         // check connection
         if ($mysqli -> connect_errno)

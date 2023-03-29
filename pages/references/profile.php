@@ -14,10 +14,11 @@ session_start();
 <body>
 <nav>
     <ul>
-        <li><a class="nav" href="../index.php">Home</a></li>
-        <li><a class="nav" href="songs.php">Songs</a></li>
+        <li><a class="nav" href="./index.php">Home</a></li>
+        <li><a class="nav" href="./songs.php">Songs</a></li>
         <?php printLoginButton() ?>
     </ul>
+    <div class="containerheadtext">Coming soon.</div>
 </nav>
 </body>
 </html>
