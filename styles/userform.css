@@ -1,7 +1,7 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
+    width: 420px;
     height: 100%;
 }
 
@@ -17,25 +17,6 @@ form {
     flex-direction: row;
     justify-items: center;
     display: flex;
-}
-
-.submitbutton {
-    border: none;
-    background-color: #d740be;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
-    color: white;
-    border-radius: 6px;
-    padding: 12px 30px;
-    margin-top: 16px;
-    margin-bottom: 6px;
-    transition: ease 300ms;
-    float: right;
-}
-
-.submitbutton:hover {
-    background-color: #f658ee;
-    cursor: pointer;
 }
 
 input.user {
@@ -69,4 +50,23 @@ input.user {
     margin: 8px 0;
     color: #11e01b;
     font-family: 'Varela Round', sans-serif;
+}
+
+label {
+    padding: 12px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #d740be;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    transition: ease 300ms;
+    text-align: center;
+}
+
+label:hover {
+    background-color: #f658ee;
+    cursor: pointer;
+
 }

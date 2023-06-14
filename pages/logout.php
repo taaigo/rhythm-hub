@@ -1,6 +1,8 @@
 <?php
 session_start();
 session_destroy();
+
+include '../php/globalCss.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,8 +10,8 @@ session_destroy();
         <title>redirecting...</title>
      <meta charset="UTF-8" />
      <meta http-equiv="refresh" content="1; URL=../pages/profilelogin.php" />
-        <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/navbar.css">
+
+        <?php echo genCssArray(['style', 'navbar']); ?>
    </head>
    <body>
    <nav>

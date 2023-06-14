@@ -7,7 +7,8 @@ function register()
         $email = $_POST['email'];
         $password = md5($_POST['password']);
 
-        $mysqli = new mysqli("localhost", "tygo", "zEFwxS1VyEibYSw3", "database");
+
+        $mysqli = new mysqli("localhost", "root", "", "songs");
 
         if ($mysqli -> connect_errno)
         {
@@ -15,13 +16,24 @@ function register()
             exit();
         }
 
+        if (!isset($username) || $password === md5(""))
+        {
+            return;
+        }
+
         $sql = "INSERT INTO users (username, email, password)
             VALUES ('".$username."', '".$email."', '".$password."')";
 
-        if ($mysqli->query($sql) === TRUE) {
+        if ($mysqli->query($sql) === TRUE)
+        {
+            $user_id = $mysqli->insert_id;
+            $sql = "SELECT * FROM users WHERE id='$user_id'";
+            $_SESSION["user"] = (object) $mysqli->query($sql)->fetch_assoc();
             $output = "created account successfully";
-        } else {
-            echo "Error: " . $sql . "<br>" . $mysqli->error;
+        }
+        else
+        {
+            echo "Error: " . $sql . "<br>" . $mysqli -> error;
         }
         $mysqli->close();
     }

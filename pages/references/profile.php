@@ -1,5 +1,6 @@
 <?php
-session_start();
+include '../php/globalCss.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -8,17 +9,27 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <?php echo genCssArray(['style', 'navbar', 'profile']); ?>
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a class="nav" href="./index.php">Home</a></li>
-        <li><a class="nav" href="./songs.php">Songs</a></li>
-        <?php printLoginButton() ?>
-    </ul>
-    <div class="containerheadtext">Coming soon.</div>
-</nav>
+<?php include './global/navbar.php' ?>
+<div class="container">
+    <div class="items">
+        <div class="profileHead">
+
+            <div class="flexleft">
+                <img class="profileAvatar" src="<?php echo "../media/avatars/".findAvatar().".png" ?>">
+                <div class="username"><?php echo $_SESSION["username"] ?></div>
+            </div>
+
+            <div class="flexright">
+                <a href="./editprofile.php" style="text-decoration: none"><div class="button" style="
+                padding: 12px 25px;
+                ">Edit Profile</div></a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

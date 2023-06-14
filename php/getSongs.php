@@ -1,7 +1,7 @@
 <?php
 function printSongs()
 {
-    $mysqli = new mysqli("localhost", "tygo", "zEFwxS1VyEibYSw3", "database");
+    $mysqli = new mysqli("localhost", "root", "", "songs");
 
     if ($mysqli -> connect_errno)
     {
@@ -9,7 +9,7 @@ function printSongs()
         exit();
     }
 
-    $sql = "SELECT * FROM `miku-content`";
+    $sql = "SELECT * FROM `songs`";
     $result = $mysqli -> query($sql);
     if ($result -> num_rows > 0)
     {
@@ -17,10 +17,11 @@ function printSongs()
         {
             $songs .= '
     <div class="songlist" id="songbox">
-        <img id="image" src="'.$row["coverart"].'"><br>
+        <img id="image" src="/rhub/media/song-coverart/'.$row["id"].'.jpg"><br>
         <div class="songheader" id="songbox">
             <div class="songtitle">'.$row["title"].'</div>
             <div class="songartist">by '.$row["artist"].'</div>
+            <div class="songduration">'.$row["bpm"].' bpm</div>
         </div>
         </div>';
         }

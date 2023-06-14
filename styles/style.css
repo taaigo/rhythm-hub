@@ -7,44 +7,65 @@ body {
 }
 
 ::-moz-selection {
-    background-color: #ff65f2;
+    background-color: #FF29DAB5;
     color: white;
 }
 
 ::selection {
-    background-color: #ff65f2;
+    background-color: #FF29DAB5;
     color: white;
 }
 
 .container {
     background-color: rgba(65, 65, 65, 0.65);
     box-shadow: rgba(0, 0, 0, 0.05) 5px 5px 10px;
-    margin-top: 24px;
-    margin-bottom: 20px;
-    border-radius: 12px;
+    border-radius: 22px;
     padding: 14px;
+    margin: 20px auto;
+    height: 100%;
+    width: 80%;
 }
 
-.containerheadtext {
+.button {
+    border: none;
+    background-color: #d740be;
     font-family: 'Varela Round', sans-serif;
-    color: #da8fce;
-    margin: 6px 0;
-    font-size: 30px;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    transition: ease 300ms;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #f658ee;
+    cursor: pointer;
+}
+
+a.submitbuttontext {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 li {
     margin-right: 5px;
 }
 
-h5 {
-    font-size: 50px;
-    margin: 15px;
-}
-
-h4 {
+.containerheadtext {
+    font-family: 'Varela Round', sans-serif;
+    color: #f572e3;
+    margin: 6px 0;
     font-size: 30px;
 }
 
-h3 {
-    font-size: 15px;
+.containersubheadtext {
+    font-family: 'Varela Round', sans-serif;
+    color: #fcc0f1;
+    font-size: 24px;
+}
+
+.containersubtext {
+    font-family: 'Varela Round', sans-serif;
+    color: #cbcbcb;
+    font-size: 20px;
 }

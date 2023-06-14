@@ -33,7 +33,7 @@ img {
     margin: 9px;
     border-radius: 16px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-    transition: ease 500ms;
+    transition: ease 200ms;
     height: 110px;
     width: 500px;
 }
@@ -69,6 +69,15 @@ img {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 14px;
     margin-left: 20px;
+}
+
+.songduration {
+    font-family: 'Varela Round', sans-serif;
+    margin-right: 14px;
+    margin-top: 20px;
+    color: #b9b9b9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.18);
+    text-align: right;
 }
 
 .songtitle + .songartist {

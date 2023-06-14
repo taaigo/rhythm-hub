@@ -1,0 +1,28 @@
+.container {
+    width: 75%;
+    margin: 50px auto;
+}
+
+.items {
+    margin: 20px;
+}
+
+.username {
+    font-family: 'Varela Round', sans-serif;
+    color: #ffa8ed;
+    font-size: 40px;
+    margin: 20px;
+    display: inline;
+}
+
+.profileAvatar {
+    object-fit: cover;
+    border-radius: 30px;
+    width: 140px;
+    height: 140px;
+}
+
+.profileHead {
+    display: flex;
+    justify-content: space-between;
+}

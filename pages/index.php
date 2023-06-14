@@ -1,6 +1,8 @@
 <?php
 session_start();
+error_reporting(E_ALL);
 include '../php/session.php';
+include '../php/globalCss.php';
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -8,23 +10,15 @@ include '../php/session.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/home.css">
+
+    <?php echo genCssArray(['style', 'navbar', 'home']); ?>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a class="nav">Home</a></li>
-            <li><a class="nav" href="songs.php">Songs</a></li>
-            <?php printLoginButton() ?>
-        </ul>
-    </nav>
+    <?php include './global/navbar.php' ?>
     <div class="container">
-        <h5>Rhythm Hub</h5>
-        <h2>We all like Miku! (and Camellia)</h2>
-        <p>Listing of songs and beatmaps on multiple games.</p>
-        <img src="../media/miku_original.jpg">
+        <div class="containerheadtext">(°д°)ハードコア・エンジョヤー</div>
+        <div class="containersubheadtext">For posting rhythm weeb shit (useless and incomplete site)</div>
+        <br><div class="containersubtext">Sponsored by wooz pixel and navgm (i wish)</div>
     </div>
 </body>
 </html>

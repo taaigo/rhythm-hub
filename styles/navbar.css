@@ -3,15 +3,13 @@ ul {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    background-color: #494949;
+    padding: 14px;
+    box-shadow: rgba(0, 0, 0, 0.075) 5px 5px 10px;
 }
 
 li {
     float: left;
-}
-
-ul {
-    background-color: #494949;
-    padding: 14px;
 }
 
 a.nav {
@@ -42,10 +40,27 @@ input.nav {
     cursor: pointer;
 }
 
+.smallavatar:hover a.nav {
+    color: #ff7ff3;
+}
+
 a.nav:hover {
     color: #ff7ff3;
 }
 
 input.nav:hover {
     color: #ff7ff3;
+}
+
+.usernav {
+    float: right;
+}
+
+.smallavatar {
+    float: right;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 49px;
+    width: 49px;
+    margin-top: auto;
 }
