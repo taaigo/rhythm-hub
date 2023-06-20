@@ -19,9 +19,9 @@ include '../php/globalCss.php';
     justify-content: center;">
     <div class="items">
         <div class="containerheadtext" style="padding: 10px 10px">Upload Profile Image</div>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <form action="upload.php" method="post" enctype="multipart/form-data" style="display: flex; justify-content: space-evenly">
             <label for="avatar" >Browse image<input type="file" style="display: none" name="avatar" id="avatar"></label>
-            <input type="submit" style="padding: 12px 25px" class="button" value="Upload Image" name="submit">
+            <input type="submit" style="padding: 12px 25px;" class="button" value="Submit" name="submit">
         </form>
     </div>
 </div>

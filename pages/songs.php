@@ -23,10 +23,16 @@ include '../php/globalCss.php';
         margin-left: 9%;
         text-align: left;
     ">Beatmap listing</div>
-<a href="./songsubmit.php"><button class="button" style="
+
+    <?php
+    if ($_SESSION['user']->id)
+    {
+        echo '<a href="./songsubmit.php"><button class="button" style="
                 padding: 12px 25px;
                 margin: 12px 180px;"
-    >Submit song</button></a>
+    >Submit song</button></a>';
+    }
+    ?>
 <div class="container">
     <div class="flexcontainer">
         <?php echo printSongs() ?>
