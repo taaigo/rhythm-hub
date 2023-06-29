@@ -1,7 +1,6 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 420px;
     height: 100%;
 }
 
@@ -27,11 +26,10 @@ input.user {
     font-size: 18px;
     padding: 20px 10px;
     background-color: #222;
-    margin-top: 12px;
-    margin-bottom: 4px;
+    margin: 6px;
     border-radius: 8px;
     height: 8px;
-    width: calc(100% - 20px);
+    width: calc(100% - 28px);
     color: #999;
 
 }
@@ -63,6 +61,7 @@ label {
     border-radius: 6px;
     transition: ease 300ms;
     text-align: center;
+    height: fit-content;
 }
 
 label:hover {
@@ -72,6 +71,17 @@ label:hover {
 }
 
 .makeitwork {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8px;
+}
+
+#changeusername {
+    display: flex;
+    flex-direction: column;
+}
+
+#inputusername {
     display: flex;
     justify-content: space-evenly;
 }

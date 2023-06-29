@@ -18,7 +18,7 @@ $output = register();
 </head>
 <body>
 <?php include './global/navbar.php' ?>
-<div class="container">
+<div class="container" style="width: 420px">
     <div class="loginWarning"></div>
     <div class="success"><?php echo $output ?></div>
     <div class="flexcontainer">

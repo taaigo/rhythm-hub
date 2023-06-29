@@ -14,7 +14,7 @@ include '../php/globalCss.php';
 </head>
 <body>
     <?php include './global/navbar.php' ?>
-        <div class="container">
+        <div class="container" style="width: 420px">
         <div class="loginWarning"><?php echo $output ?></div>
         <div class="flexcontainer">
             <form method="post" action="">

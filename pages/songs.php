@@ -29,7 +29,7 @@ include '../php/globalCss.php';
     {
         echo '<a href="./songsubmit.php"><button class="button" style="
                 padding: 12px 25px;
-                margin: 12px 180px;"
+                margin: 12px 9.2%;"
     >Submit song</button></a>';
     }
     ?>

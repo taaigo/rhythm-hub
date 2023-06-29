@@ -1,0 +1,91 @@
+div.songdetails {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+img.songdetails {
+    background-size: cover;
+    margin: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+}
+
+div.commentinput {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 76px;
+}
+
+.songtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.submituser {
+    background-color: #222;
+    align-items: center;
+    width: 70%;
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+}
+
+img.submitter {
+    background-size: cover;
+    width: 76px;
+    height: 76px;
+    border-radius: 12px;
+}
+
+.commentcontent {
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    margin: 6px;
+    margin-top: 12px;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#date {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: #707070;
+}
+
+#user {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#content {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: #cbcbcb;
+    margin: 8px;
+}
+
+.username {
+    font-family: 'Varela Round', sans-serif;
+    color: #f572e3;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+img.pfp {
+    background-size: cover;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+}

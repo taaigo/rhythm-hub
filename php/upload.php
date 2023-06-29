@@ -5,6 +5,7 @@ function uploadAvatar()
     $target_file = $target_dir . basename($_SESSION['user']->id.".png");
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
 // Check if image file is a actual image or fake image
     if (isset($_POST["submit"]))
     {
@@ -35,7 +36,7 @@ function uploadAvatar()
     {
         if (move_uploaded_file($_FILES["avatar"]["tmp_name"], $target_file))
         {
-            return "The file ". htmlspecialchars( basename( $_FILES["avatar"]["name"])). " has been uploaded.";
+            return "Successfully changed profile picture.";
         }
         else
         {

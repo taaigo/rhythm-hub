@@ -15,12 +15,11 @@ function login()
             exit();
         }
 
-        // idk perform quiry or smth
+        // idk perform query or smth
         if ($result = $mysqli -> query("SELECT * FROM users WHERE username='$user' AND password='$pass'"))
         {
             if ( $result -> num_rows == 1)
             {
-                $_SESSION["username"] = $user;
                 $_SESSION["session-id"] = session_id();
                 $_SESSION["user"] = (object) $result->fetch_assoc();
                 return;

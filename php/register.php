@@ -37,7 +37,6 @@ function register()
         }
         $mysqli->close();
     }
-    $_SESSION["username"] = $username;
     $_SESSION["session-id"] = session_id();
     return $output;
 }

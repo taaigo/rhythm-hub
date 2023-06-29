@@ -19,8 +19,8 @@ include '../php/globalCss.php';
         <div class="profileHead">
 
             <div class="flexleft">
-                <img class="profileAvatar" src="<?php echo "../media/avatars/".findAvatar().".png" ?>">
-                <div class="username"><?php echo $_SESSION["username"] ?></div>
+                <img class="profileAvatar" src="<?php echo "../media/avatars/".findAvatar($_SESSION['user']->id).".png" ?>">
+                <div class="username"><?php echo $_SESSION["user"]->username ?></div>
             </div>
 
             <div class="flexright">

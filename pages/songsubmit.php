@@ -9,7 +9,7 @@ if ($_SESSION['user']->id)
 }
 else
 {
-    include './references/no-login.php';
+    include './global/no-login.php';
 }
 ?>
 

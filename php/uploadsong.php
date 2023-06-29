@@ -6,6 +6,7 @@ function uploadSong()
         $title = $_POST['title'];
         $artist = $_POST['artist'];
         $bpm = $_POST['bpm'];
+        $submitter = $_SESSION['user']->id;
 
         $mysqli = new mysqli("localhost", "root", "", "songs");
 
@@ -15,7 +16,7 @@ function uploadSong()
             exit();
         }
 
-        $sql = "INSERT INTO `songs` (title, artist, bpm) VALUES ('".$title."', '".$artist."', '".$bpm."')";
+        $sql = "INSERT INTO `songs` (title, artist, bpm, submitter_id) VALUES ('".$title."', '".$artist."', '".$bpm."', '".$submitter."')";
 
         if ($mysqli->query($sql) === TRUE)
         {
@@ -62,15 +63,12 @@ function uploadCover($song_id)
     }
     else
     {
-        echo 'test';
         if (move_uploaded_file($_FILES["cover"]["tmp_name"], $target_file))
         {
-            echo "test is yyeeeeessss";
             return "The file " . htmlspecialchars(basename($_FILES["cover"]["name"])) . " has been uploaded.";
         }
         else
         {
-            echo "test is NOOOOOO";
             return "Sorry, there was an error uploading your file.<br>";
         }
     }
