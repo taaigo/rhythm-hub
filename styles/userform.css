@@ -75,13 +75,3 @@ label:hover {
     justify-content: space-evenly;
     margin: 8px;
 }
-
-#changeusername {
-    display: flex;
-    flex-direction: column;
-}
-
-#inputusername {
-    display: flex;
-    justify-content: space-evenly;
-}

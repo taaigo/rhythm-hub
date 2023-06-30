@@ -17,10 +17,10 @@ include '../php/globalCss.php';
 </head>
 <body>
 <?php include './global/navbar.php' ?>
-<div class="containerheadtext" style="
+<div class="head">
+    <div class="containerheadtext" style="
         font-size: 40px;
         margin-top: 48px;
-        margin-left: 9%;
         text-align: left;
     ">Beatmap listing</div>
 
@@ -29,10 +29,11 @@ include '../php/globalCss.php';
     {
         echo '<a href="./songsubmit.php"><button class="button" style="
                 padding: 12px 25px;
-                margin: 12px 9.2%;"
+                margin: 12px 0;"
     >Submit song</button></a>';
     }
     ?>
+</div>
 <div class="container">
     <div class="flexcontainer">
         <?php echo printSongs() ?>

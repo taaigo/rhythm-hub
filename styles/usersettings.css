@@ -1,0 +1,23 @@
+.items {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 100%;
+}
+
+.containerwidth {
+    width: 22%;
+}
+
+#inputusername {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.settingelement {
+    margin: 20px 0;
+}

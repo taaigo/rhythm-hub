@@ -36,7 +36,7 @@ $_SESSION['song_id'] = $song->id;
 </head>
 <body>
 <?php include './global/navbar.php' ?>
-<div class="container" style="width: 420px">
+<div class="container" style="width: 26%; min-width: 366px">
     <div class="songdetails">
         <div class="songtop">
             <img class="songdetails" src="../media/song-coverart/<?php echo $song->id ?>.jpg">
@@ -46,7 +46,10 @@ $_SESSION['song_id'] = $song->id;
         <div class="containersubtext" style="margin: 0 10px">by <?php echo $song->artist?></div>
         <div class="submituser">
             <img class="submitter" src="../media/avatars/<?php echo findAvatar($submitter->id) ?>.png">
-            <div class="containersubtext" style="margin: 8px; font-size: 22px">Submitted by:<br><?php echo $submitter->username ?></div>
+            <div class="submitinfo">
+                <div class="containersubtext" style="margin: 8px; margin-bottom: 0; font-size: 22px">Submitted by:<br><?php echo $submitter->username ?></div>
+                <div class="date">on <?php echo $song->date ?></div>
+            </div>
         </div>
     </div>
     <form action="../php/upload_comment.php" method="post">
@@ -56,7 +59,7 @@ $_SESSION['song_id'] = $song->id;
                 if ($_SESSION['user']->id)
                 {
                     echo '
-                        <input class="user" type="text" name="comment" placeholder="Write a comment">
+                        <input class="user" type="text" name="comment" style="resize: vertical" placeholder="Write a comment">
                         <input class="button" type="submit" style="margin: 6px; padding: 0 18px" value="Post">
                     ';
                 }

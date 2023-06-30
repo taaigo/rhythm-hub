@@ -10,24 +10,24 @@ include '../php/globalCss.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <?php echo genCssArray(['style', 'navbar', 'userform']); ?>
+    <?php echo genCssArray(['style', 'navbar', 'userform', 'usersettings']); ?>
 </head>
 <body>
 <?php include './global/navbar.php' ?>
-<div class="containerwidth" style="width: 420px">
-    <div style="margin: 30px" class="containerheadtext">Edit Profile</div>
+<div class="containerwidth">
+    <div style="margin: 30px 0" class="containerheadtext">Edit Profile</div>
     <div class="container" style="
     display: flex;
     justify-content: center;">
         <div class="items">
-            <div class="containerheadtext" style="padding: 10px 10px; text-align: center">Upload Profile Image</div>
-            <div>
-                <form action="upload.php" method="post" enctype="multipart/form-data" style="display: flex; justify-content: space-evenly">
-                    <label for="avatar" >Browse image<input type="file" style="display: none" name="avatar" id="avatar"></label>
-                    <input type="submit" style="padding: 12px 25px;" class="button" value="Submit" name="submit">
-                </form>
-            </div>
-            <div id="changeusername">
+            <div class="settingelement">
+                <div class="containerheadtext" style="padding: 10px 10px; text-align: center">Upload Profile Image</div>
+                    <form action="upload.php" method="post" enctype="multipart/form-data" style="display: flex; justify-content: space-evenly">
+                        <label for="avatar" >Browse image<input type="file" style="display: none" name="avatar" id="avatar"></label>
+                        <input type="submit" style="padding: 12px 25px;" class="button" value="Submit" name="submit">
+                    </form>
+                </div>
+            <div class="settingelement">
                 <div class="containerheadtext" style="text-align: center; margin-top: 20px">Change Username</div>
                 <form method="post" action="changeusername.php" enctype="multipart/form-data">
                     <div id="inputusername">

@@ -5,6 +5,8 @@
 
 .items {
     margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .username {
