@@ -15,7 +15,7 @@ include '../php/globalCss.php';
 <body>
 <?php include './global/navbar.php' ?>
 <div class="container">
-    <div class="items">
+    <div class="profile">
         <div class="profileHead">
 
             <div class="flexleft">

@@ -1,6 +1,11 @@
 .container {
     width: 75%;
     margin: 50px auto;
+    padding: 26px;
+}
+
+.profile {
+    justify-content: space-between;
 }
 
 .items {
@@ -13,8 +18,9 @@
     font-family: 'Varela Round', sans-serif;
     color: #ffa8ed;
     font-size: 40px;
-    margin: 20px;
+    margin: 0 20px;
     display: inline;
+    margin-top: auto;
 }
 
 .profileAvatar {
@@ -28,3 +34,7 @@
     display: flex;
     justify-content: space-between;
 }
+ .flexleft {
+     display: flex;
+     justify-content: space-evenly;
+ }
